@@ -1,27 +1,63 @@
-# Windbnb
+<h1 align="center">DevChallenges - My Gallery</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+<div align="center">
+   Solution for a challenge from <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
 
-## Development server
+<div align="center">
+  <h3>
+    <a href="https://devchallenges-my-gallery.vercel.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/FARCER/devchallenges-my-gallery">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<!-- TABLE OF CONTENTS -->
 
-## Code scaffolding
+## Table of Contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [Contact](#contact)
 
-## Build
+<!-- OVERVIEW -->
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Overview
 
-## Running unit tests
+![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-## Running end-to-end tests
+- Where can I see your demo?
+- What was your experience?
+- What have you learned/improved?
+- Your wisdom? :)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Built With
 
-## Further help
+HTML, CSS
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Features
+
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge.
+The [challenge](https://devchallenges.io/challenges/TtUjDt19eIHxNQ4n5jps) was to build an application to complete the following user stories:
+
+- [x] User story: This is a completed user stories
+- [ ] User story: This is a incompleted user stories
+- [ ] User story: This is a incompleted 2nd user stories
+
+## Contact
+
+- Website [asalamatin.ru](http://asalamatin.ru/)
+- Youtube [Youtube](https://youtube.com/c/frontcoder)
