@@ -9,7 +9,7 @@ import {PlacesComponent} from './components/places/places.component';
     PlacesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     PlaceComponent,
