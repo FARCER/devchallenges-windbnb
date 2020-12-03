@@ -1,11 +1,17 @@
-<div class="img"></div>
+<div class="img" [ngStyle]="{'background-image': 'url(' + place.photo + ')'}"></div>
 <div class="info">
   <div class="row">
-    <div class="is-super">Super Host</div>
-    <span class="name"></span>
+    <div class="is-super" *ngIf="place.superHost">Super Host</div>
+    <div class="description">
+      <span class="type">{{place.type}}</span>
+      <span class="beds" *ngIf="place.beds">{{getBedsTitle(place.beds)}}</span>
+    </div>
     <div class="rating">
       <span class="material-icons">grade</span>
+      <span>{{place.rating}}</span>
     </div>
   </div>
-  <div class="row"></div>
+  <div class="row">
+    <span class="title">{{place.title}}</span>
+  </div>
 </div>

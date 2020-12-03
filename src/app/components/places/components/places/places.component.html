@@ -1,3 +1,10 @@
-<h1>Stays in Finland</h1>
+<ng-container *ngIf="places">
+  <div class="header">
+    <h1>Stays in Finland</h1>
+    <div class="counter">{{getStaysCount()}}</div>
+  </div>
+  <div class="places">
+    <app-place *ngFor="let place of places" [place]="place"></app-place>
+  </div>
 
-<app-place></app-place>
+</ng-container>

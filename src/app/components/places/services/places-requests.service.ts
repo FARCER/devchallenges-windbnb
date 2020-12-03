@@ -6,9 +6,6 @@ import {Injectable} from '@angular/core';
 export class PlacesRequestsService {
 
   constructor(private http: HttpClient) {
-    this.getJSON().subscribe(data => {
-      console.log(data);
-    });
   }
 
   public getJSON(): Observable<any> {

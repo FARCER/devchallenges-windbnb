@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
+import {IPlace} from '../../interfaces/place.interface';
 
 @Component({
   selector: 'app-place',
   templateUrl: './place.component.html',
-  styleUrls: ['./place.component.scss']
+  styleUrls: ['./place.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PlaceComponent implements OnInit {
+export class PlaceComponent {
 
-  constructor() { }
+  @Input() public place: IPlace;
 
-  ngOnInit(): void {
+  public getBedsTitle(count: number): string {
+    return count === 1
+      ? ' . 1 bed'
+      : ` . ${count} beds`;
   }
 
 }
