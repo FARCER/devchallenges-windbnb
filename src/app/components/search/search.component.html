@@ -1,3 +1,28 @@
-<div class="prev">
+<div class="search-container-outer" (click)="close()" [ngClass]="{'is-open': isOpen}"></div>
 
+<div class="search" [ngClass]="{'is-open': isOpen}" (click)="open()">
+  <div class="search-container-inner">
+    <div class="search-item">
+      <div class="search-item__header">
+        <span class="search-item__label">Location</span>
+        <span class="search-item__text is-empty">Add location</span>
+        <!--      <span class="search-item__text">Helsinki, Finland</span>-->
+      </div>
+    </div>
+    <div class="search-item">
+      <div class="search-item__header">
+        <span class="search-item__label">Location</span>
+        <span class="search-item__text is-empty">Add guests</span>
+        <!--      <span class="search-item__text">4 guests</span>-->
+      </div>
+    </div>
+    <div class="search-item">
+      <div class="search-btn__wrapper">
+        <button class="search-btn">
+          <span class="material-icons search-btn__icon">search</span>
+          <span class="search-btn__text">search</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

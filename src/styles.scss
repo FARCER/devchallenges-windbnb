@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 // font-family: 'Montserrat', sans-serif;
-//font-family: 'Mulish', sans-serif;
+// font-family: 'Mulish', sans-serif;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 html, body {
   font-family: 'Montserrat', sans-serif;

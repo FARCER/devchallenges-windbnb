@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -8,9 +8,19 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  public isOpen: boolean = false;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  public open(): void {
+    this.isOpen = true;
+  }
+
+  public close(): void {
+    this.isOpen = false;
+  }
 }
