@@ -1,5 +1,4 @@
 <div class="search-container" (click)="close()" [ngClass]="{'is-open': isOpen}"></div>
-1
 <div class="search-status" (click)="open()">
   <div class="search-status__item">
     <span class="search-text is-empty">Add location</span>
@@ -12,7 +11,7 @@
   </div>
 </div>
 
-<div class="search-form" [ngClass]="{'is-open': isOpen}">
+<form #searchForm="ngForm" (ngSubmit)="onsSubmit()" class="search-form" [ngClass]="{'is-open': isOpen}">
   <div class="search-form__container">
     <div class="search-item">
       <div class="search-item__header">
@@ -20,21 +19,53 @@
         <span class="search-text is-empty">Add location</span>
         <!--      <span class="search-text">Helsinki, Finland</span>-->
       </div>
+      <div class="search-item__body">
+        <ul class="places">
+          <li class="place">
+            <span class="material-icons place__icon">location_on</span>
+            Helsinki, Finland
+          </li>
+          <li class="place">
+            <span class="material-icons place__icon">location_on</span>
+            Turku, Finland
+          </li>
+          <li class="place">
+            <span class="material-icons place__icon">location_on</span>
+            Oulu, Finland
+          </li>
+          <li class="place">
+            <span class="material-icons place__icon">location_on</span>
+            Vaasa, Finland
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="search-item">
       <div class="search-item__header">
-        <span class="search-item__label">Location</span>
+        <span class="search-item__label">Guests</span>
         <span class="search-text is-empty">Add guests</span>
         <!--      <span class="search-text">4 guests</span>-->
+      </div>
+      <div class="search-item__body">
+        <div class="guests">
+          <span class="guests__label">Adults</span>
+          <span class="guests__text">Ages 13 or above</span>
+          <app-counter [(ngModel)]="guests.adults" [ngModelOptions]="{standalone: true}"></app-counter>
+        </div>
+        <div class="guests">
+          <span class="guests__label">Children</span>
+          <span class="guests__text">Ages 2-12</span>
+          <app-counter [(ngModel)]="guests.children" [ngModelOptions]="{standalone: true}"></app-counter>
+        </div>
       </div>
     </div>
     <div class="search-item">
       <div class="search-btn__wrapper">
-        <button class="search-btn">
+        <button class="search-btn" type="submit">
           <span class="material-icons search-btn__icon">search</span>
           <span class="search-btn__text">search</span>
         </button>
       </div>
     </div>
   </div>
-</div>
+</form>

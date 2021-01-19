@@ -1,0 +1,16 @@
+:host {
+  align-items: center;
+  display: flex;
+}
+.btn {
+  border: 1px solid #828282;
+  border-radius: 4px;
+  color: #828282;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.current__value {
+  margin: 0 16px;
+}

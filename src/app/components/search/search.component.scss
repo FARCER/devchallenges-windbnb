@@ -40,7 +40,7 @@
   font-weight: 700;
   display: flex;
   outline: none;
-  padding: 0 16px;
+  padding: 0 24px;
   &__wrapper {
     display: flex;
     justify-content: center;
@@ -67,7 +67,6 @@
   &__container {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    cursor: pointer;
     display: flex;
     max-width: 1250px;
     margin: 0 auto;
@@ -75,10 +74,12 @@
 }
 .search-item {
   flex: 1;
+  position: relative;
   &:not(:last-child) {
     border-right: 1px solid #f2f2f2;
   }
   &__header {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,6 +92,13 @@
     font-weight: 800;
     margin-bottom: 4px;
     text-transform: uppercase;
+  }
+  &__body {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    padding: 40px 16px;
+    width: 100%;
   }
 }
 .search-container {
@@ -106,5 +114,37 @@
   &.is-open {
     opacity: 1;
     z-index: 10;
+  }
+}
+.guests {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mulish', sans-serif;
+  &:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  &__label {
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  &__text {
+    color: #bdbdbd;
+    margin-bottom: 12px;
+  }
+}
+.places {
+  margin: 0;
+  padding: 0;
+}
+.place {
+  align-items: center;
+  color: #4f4f4f;
+  display: flex;
+  list-style: none;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__icon {
+    margin-right: 8px;
   }
 }
