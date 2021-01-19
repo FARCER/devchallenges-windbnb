@@ -1,19 +1,31 @@
-<div class="search-container-outer" (click)="close()" [ngClass]="{'is-open': isOpen}"></div>
+<div class="search-container" (click)="close()" [ngClass]="{'is-open': isOpen}"></div>
 
-<div class="search" [ngClass]="{'is-open': isOpen}" (click)="open()">
-  <div class="search-container-inner">
+<div class="search-status" (click)="open()">
+  <div class="search-status__item">
+    <span class="search-text is-empty">Add location</span>
+  </div>
+  <div class="search-status__item">
+    <span class="search-text is-empty">Add guests</span>
+  </div>
+  <div class="search-status__item">
+    <span class="material-icons search-status__icon">search</span>
+  </div>
+</div>
+
+<div class="search-form" [ngClass]="{'is-open': isOpen}">
+  <div class="search-form__container">
     <div class="search-item">
       <div class="search-item__header">
         <span class="search-item__label">Location</span>
-        <span class="search-item__text is-empty">Add location</span>
-        <!--      <span class="search-item__text">Helsinki, Finland</span>-->
+        <span class="search-text is-empty">Add location</span>
+        <!--      <span class="search-text">Helsinki, Finland</span>-->
       </div>
     </div>
     <div class="search-item">
       <div class="search-item__header">
         <span class="search-item__label">Location</span>
-        <span class="search-item__text is-empty">Add guests</span>
-        <!--      <span class="search-item__text">4 guests</span>-->
+        <span class="search-text is-empty">Add guests</span>
+        <!--      <span class="search-text">4 guests</span>-->
       </div>
     </div>
     <div class="search-item">
